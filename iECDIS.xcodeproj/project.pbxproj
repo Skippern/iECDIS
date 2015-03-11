@@ -41,6 +41,8 @@
 		20F628851AB0C6CC006B5799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20F628861AB0C6CC006B5799 /* iECDISTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iECDISTests.m; sourceTree = "<group>"; };
 		20F628901AB0C83F006B5799 /* iECDIS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iECDIS.entitlements; sourceTree = "<group>"; };
+		20F628911AB0CA30006B5799 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		20F628921AB0CA30006B5799 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,8 @@
 		20F6285E1AB0C6CC006B5799 = {
 			isa = PBXGroup;
 			children = (
+				20F628911AB0CA30006B5799 /* LICENSE */,
+				20F628921AB0CA30006B5799 /* README.md */,
 				20F628691AB0C6CC006B5799 /* iECDIS */,
 				20F628831AB0C6CC006B5799 /* iECDISTests */,
 				20F628681AB0C6CC006B5799 /* Products */,
@@ -344,6 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iECDIS/iECDIS.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				INFOPLIST_FILE = iECDIS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,6 +361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iECDIS/iECDIS.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				INFOPLIST_FILE = iECDIS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
