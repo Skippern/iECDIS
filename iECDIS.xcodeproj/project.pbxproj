@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2022CCA81AB3B30300106909 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2022CCA71AB3B30300106909 /* CoreFoundation.framework */; };
 		20F6286E1AB0C6CC006B5799 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F6286D1AB0C6CC006B5799 /* AppDelegate.m */; };
 		20F628701AB0C6CC006B5799 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F6286F1AB0C6CC006B5799 /* main.m */; };
 		20F628731AB0C6CC006B5799 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F628721AB0C6CC006B5799 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2022CCA71AB3B30300106909 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		20F628671AB0C6CC006B5799 /* iECDIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iECDIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F6286B1AB0C6CC006B5799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20F6286C1AB0C6CC006B5799 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2022CCA81AB3B30300106909 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +69,7 @@
 		20F6285E1AB0C6CC006B5799 = {
 			isa = PBXGroup;
 			children = (
+				2022CCA71AB3B30300106909 /* CoreFoundation.framework */,
 				20F628911AB0CA30006B5799 /* LICENSE */,
 				20F628921AB0CA30006B5799 /* README.md */,
 				20F628691AB0C6CC006B5799 /* iECDIS */,
