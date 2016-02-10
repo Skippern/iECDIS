@@ -56,6 +56,7 @@
 		202DE9EA1C6BA92300E4D153 /* serial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = serial.m; path = Interface/serial.m; sourceTree = "<group>"; };
 		202DE9EC1C6BA94300E4D153 /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = net.h; path = Interface/net.h; sourceTree = "<group>"; };
 		202DE9ED1C6BA94300E4D153 /* net.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = net.m; path = Interface/net.m; sourceTree = "<group>"; };
+		202DE9EF1C6BAC5200E4D153 /* iECDIS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iECDIS.xcconfig; sourceTree = "<group>"; };
 		20F628671AB0C6CC006B5799 /* iECDIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iECDIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F6286B1AB0C6CC006B5799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20F6286C1AB0C6CC006B5799 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,18 +157,19 @@
 		20F628691AB0C6CC006B5799 /* iECDIS */ = {
 			isa = PBXGroup;
 			children = (
-				20F628901AB0C83F006B5799 /* iECDIS.entitlements */,
 				20F6286C1AB0C6CC006B5799 /* AppDelegate.h */,
-				20F628711AB0C6CC006B5799 /* ViewController.h */,
 				20F6286D1AB0C6CC006B5799 /* AppDelegate.m */,
-				20F628721AB0C6CC006B5799 /* ViewController.m */,
-				20F628771AB0C6CC006B5799 /* Images.xcassets */,
+				20F628901AB0C83F006B5799 /* iECDIS.entitlements */,
+				202DE9EF1C6BAC5200E4D153 /* iECDIS.xcconfig */,
 				20F628741AB0C6CC006B5799 /* iECDIS.xcdatamodeld */,
+				20F628771AB0C6CC006B5799 /* Images.xcassets */,
 				202DE9E51C6BA8AB00E4D153 /* Interface */,
 				20F628791AB0C6CC006B5799 /* Main.storyboard */,
 				202DE9D11C6BA6CF00E4D153 /* MapDisplay */,
 				202DE9DE1C6BA7D800E4D153 /* Protocol */,
 				20F6286A1AB0C6CC006B5799 /* Supporting Files */,
+				20F628711AB0C6CC006B5799 /* ViewController.h */,
+				20F628721AB0C6CC006B5799 /* ViewController.m */,
 			);
 			path = iECDIS;
 			sourceTree = "<group>";
