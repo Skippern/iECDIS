@@ -18,10 +18,12 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    NSLog(@"iECDIS Did Finish Launching");
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+    NSLog(@"iECDIS Will Terminate");
 }
 
 #pragma mark - Core Data stack
@@ -29,15 +31,26 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize managedObjectContext = _managedObjectContext;
+@synthesize contentViewController = _contentViewController;
 
 - (NSURL *)applicationDocumentsDirectory {
     // The directory the application uses to store the Core Data store file. This code uses a directory named "br.com.Johnsen-Offshore.iECDIS" in the user's Application Support directory.
+    NSLog(@"applicationDocumentsDirectory called");
     NSURL *appSupportURL = [[[NSFileManager defaultManager] URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask] lastObject];
     return [appSupportURL URLByAppendingPathComponent:@"br.com.Johnsen-Offshore.iECDIS"];
 }
 
+- (NSViewController *)contentViewController {
+    NSLog(@"contentViewController called in AppDelegate.m");
+    if (_contentViewController) {
+        return _contentViewController;
+    }
+    return _contentViewController;
+}
+
 - (NSManagedObjectModel *)managedObjectModel {
     // The managed object model for the application. It is a fatal error for the application not to be able to find and load its model.
+    NSLog(@"managedObjectModel called");
     if (_managedObjectModel) {
         return _managedObjectModel;
     }
@@ -49,6 +62,7 @@
 
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
     // The persistent store coordinator for the application. This implementation creates and return a coordinator, having added the store for the application to it. (The directory for the store is created, if necessary.)
+    NSLog(@"persistentStoreCoordinator called");
     if (_persistentStoreCoordinator) {
         return _persistentStoreCoordinator;
     }
@@ -96,6 +110,7 @@
 
 - (NSManagedObjectContext *)managedObjectContext {
     // Returns the managed object context for the application (which is already bound to the persistent store coordinator for the application.)
+    NSLog(@"managedObjectContext called");
     if (_managedObjectContext) {
         return _managedObjectContext;
     }
@@ -126,11 +141,13 @@
 
 - (NSUndoManager *)windowWillReturnUndoManager:(NSWindow *)window {
     // Returns the NSUndoManager for the application. In this case, the manager returned is that of the managed object context for the application.
+    NSLog(@"windowWillReturnUndoManager called");
     return [[self managedObjectContext] undoManager];
 }
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender {
     // Save changes in the application's managed object context before the application terminates.
+    NSLog(@"applicationSHouldTerminate called");
     
     if (!_managedObjectContext) {
         return NSTerminateNow;

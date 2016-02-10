@@ -183,10 +183,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <mapView wantsLayer="YES" fixedFrame="YES" mapType="standard" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQl-br-ML0">
+                            <mapView wantsLayer="YES" fixedFrame="YES" placeholderIntrinsicWidth="480" placeholderIntrinsicHeight="270" mapType="standard" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQl-br-ML0">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                                 <connections>
-                                    <outlet property="delegate" destination="m2S-Jp-Qdl" id="7i0-t7-tjg"/>
+                                    <outlet property="delegate" destination="XfG-lQ-9wD" id="FFW-Jd-s0q"/>
                                 </connections>
                             </mapView>
                         </subviews>
