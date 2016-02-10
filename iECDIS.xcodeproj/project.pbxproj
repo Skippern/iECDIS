@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		2022CCA81AB3B30300106909 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2022CCA71AB3B30300106909 /* CoreFoundation.framework */; };
+		202DE9D41C6BA70000E4D153 /* DisplayOnlineMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DE9D31C6BA70000E4D153 /* DisplayOnlineMap.m */; };
+		202DE9D71C6BA76400E4D153 /* DisplayBSB.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DE9D61C6BA76400E4D153 /* DisplayBSB.m */; };
+		202DE9DA1C6BA78E00E4D153 /* DisplayENC.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DE9D91C6BA78E00E4D153 /* DisplayENC.m */; };
+		202DE9DD1C6BA7BD00E4D153 /* DisplayGeoTIFF.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DE9DC1C6BA7BD00E4D153 /* DisplayGeoTIFF.m */; };
+		202DE9E11C6BA84400E4D153 /* NMEA0183.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DE9E01C6BA84400E4D153 /* NMEA0183.m */; };
+		202DE9E41C6BA87000E4D153 /* NMEA2000.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DE9E31C6BA87000E4D153 /* NMEA2000.m */; };
+		202DE9E81C6BA90700E4D153 /* USB.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DE9E71C6BA90700E4D153 /* USB.m */; };
+		202DE9EB1C6BA92300E4D153 /* serial.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DE9EA1C6BA92300E4D153 /* serial.m */; };
+		202DE9EE1C6BA94300E4D153 /* net.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DE9ED1C6BA94300E4D153 /* net.m */; };
 		20F6286E1AB0C6CC006B5799 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F6286D1AB0C6CC006B5799 /* AppDelegate.m */; };
 		20F628701AB0C6CC006B5799 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F6286F1AB0C6CC006B5799 /* main.m */; };
 		20F628731AB0C6CC006B5799 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F628721AB0C6CC006B5799 /* ViewController.m */; };
@@ -29,6 +38,24 @@
 
 /* Begin PBXFileReference section */
 		2022CCA71AB3B30300106909 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		202DE9D21C6BA70000E4D153 /* DisplayOnlineMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisplayOnlineMap.h; path = MapDisplay/DisplayOnlineMap.h; sourceTree = "<group>"; };
+		202DE9D31C6BA70000E4D153 /* DisplayOnlineMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DisplayOnlineMap.m; path = MapDisplay/DisplayOnlineMap.m; sourceTree = "<group>"; };
+		202DE9D51C6BA76400E4D153 /* DisplayBSB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisplayBSB.h; path = MapDisplay/DisplayBSB.h; sourceTree = "<group>"; };
+		202DE9D61C6BA76400E4D153 /* DisplayBSB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DisplayBSB.m; path = MapDisplay/DisplayBSB.m; sourceTree = "<group>"; };
+		202DE9D81C6BA78E00E4D153 /* DisplayENC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisplayENC.h; path = MapDisplay/DisplayENC.h; sourceTree = "<group>"; };
+		202DE9D91C6BA78E00E4D153 /* DisplayENC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DisplayENC.m; path = MapDisplay/DisplayENC.m; sourceTree = "<group>"; };
+		202DE9DB1C6BA7BD00E4D153 /* DisplayGeoTIFF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisplayGeoTIFF.h; path = MapDisplay/DisplayGeoTIFF.h; sourceTree = "<group>"; };
+		202DE9DC1C6BA7BD00E4D153 /* DisplayGeoTIFF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DisplayGeoTIFF.m; path = MapDisplay/DisplayGeoTIFF.m; sourceTree = "<group>"; };
+		202DE9DF1C6BA84400E4D153 /* NMEA0183.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NMEA0183.h; path = Protocol/NMEA0183.h; sourceTree = "<group>"; };
+		202DE9E01C6BA84400E4D153 /* NMEA0183.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NMEA0183.m; path = Protocol/NMEA0183.m; sourceTree = "<group>"; };
+		202DE9E21C6BA87000E4D153 /* NMEA2000.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NMEA2000.h; path = Protocol/NMEA2000.h; sourceTree = "<group>"; };
+		202DE9E31C6BA87000E4D153 /* NMEA2000.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NMEA2000.m; path = Protocol/NMEA2000.m; sourceTree = "<group>"; };
+		202DE9E61C6BA90700E4D153 /* USB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USB.h; path = Interface/USB.h; sourceTree = "<group>"; };
+		202DE9E71C6BA90700E4D153 /* USB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = USB.m; path = Interface/USB.m; sourceTree = "<group>"; };
+		202DE9E91C6BA92300E4D153 /* serial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = serial.h; path = Interface/serial.h; sourceTree = "<group>"; };
+		202DE9EA1C6BA92300E4D153 /* serial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = serial.m; path = Interface/serial.m; sourceTree = "<group>"; };
+		202DE9EC1C6BA94300E4D153 /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = net.h; path = Interface/net.h; sourceTree = "<group>"; };
+		202DE9ED1C6BA94300E4D153 /* net.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = net.m; path = Interface/net.m; sourceTree = "<group>"; };
 		20F628671AB0C6CC006B5799 /* iECDIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iECDIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F6286B1AB0C6CC006B5799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20F6286C1AB0C6CC006B5799 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +93,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		202DE9D11C6BA6CF00E4D153 /* MapDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				202DE9D21C6BA70000E4D153 /* DisplayOnlineMap.h */,
+				202DE9D31C6BA70000E4D153 /* DisplayOnlineMap.m */,
+				202DE9D51C6BA76400E4D153 /* DisplayBSB.h */,
+				202DE9D61C6BA76400E4D153 /* DisplayBSB.m */,
+				202DE9D81C6BA78E00E4D153 /* DisplayENC.h */,
+				202DE9D91C6BA78E00E4D153 /* DisplayENC.m */,
+				202DE9DB1C6BA7BD00E4D153 /* DisplayGeoTIFF.h */,
+				202DE9DC1C6BA7BD00E4D153 /* DisplayGeoTIFF.m */,
+			);
+			name = MapDisplay;
+			sourceTree = "<group>";
+		};
+		202DE9DE1C6BA7D800E4D153 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				202DE9DF1C6BA84400E4D153 /* NMEA0183.h */,
+				202DE9E01C6BA84400E4D153 /* NMEA0183.m */,
+				202DE9E21C6BA87000E4D153 /* NMEA2000.h */,
+				202DE9E31C6BA87000E4D153 /* NMEA2000.m */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		202DE9E51C6BA8AB00E4D153 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				202DE9E61C6BA90700E4D153 /* USB.h */,
+				202DE9E71C6BA90700E4D153 /* USB.m */,
+				202DE9E91C6BA92300E4D153 /* serial.h */,
+				202DE9EA1C6BA92300E4D153 /* serial.m */,
+				202DE9EC1C6BA94300E4D153 /* net.h */,
+				202DE9ED1C6BA94300E4D153 /* net.m */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
 		20F6285E1AB0C6CC006B5799 = {
 			isa = PBXGroup;
 			children = (
@@ -92,12 +158,15 @@
 			children = (
 				20F628901AB0C83F006B5799 /* iECDIS.entitlements */,
 				20F6286C1AB0C6CC006B5799 /* AppDelegate.h */,
-				20F6286D1AB0C6CC006B5799 /* AppDelegate.m */,
 				20F628711AB0C6CC006B5799 /* ViewController.h */,
+				20F6286D1AB0C6CC006B5799 /* AppDelegate.m */,
 				20F628721AB0C6CC006B5799 /* ViewController.m */,
 				20F628771AB0C6CC006B5799 /* Images.xcassets */,
-				20F628791AB0C6CC006B5799 /* Main.storyboard */,
 				20F628741AB0C6CC006B5799 /* iECDIS.xcdatamodeld */,
+				202DE9E51C6BA8AB00E4D153 /* Interface */,
+				20F628791AB0C6CC006B5799 /* Main.storyboard */,
+				202DE9D11C6BA6CF00E4D153 /* MapDisplay */,
+				202DE9DE1C6BA7D800E4D153 /* Protocol */,
 				20F6286A1AB0C6CC006B5799 /* Supporting Files */,
 			);
 			path = iECDIS;
@@ -233,10 +302,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				202DE9E81C6BA90700E4D153 /* USB.m in Sources */,
+				202DE9D71C6BA76400E4D153 /* DisplayBSB.m in Sources */,
+				202DE9E11C6BA84400E4D153 /* NMEA0183.m in Sources */,
+				202DE9DA1C6BA78E00E4D153 /* DisplayENC.m in Sources */,
+				202DE9EE1C6BA94300E4D153 /* net.m in Sources */,
 				20F628761AB0C6CC006B5799 /* iECDIS.xcdatamodeld in Sources */,
+				202DE9E41C6BA87000E4D153 /* NMEA2000.m in Sources */,
 				20F628731AB0C6CC006B5799 /* ViewController.m in Sources */,
 				20F628701AB0C6CC006B5799 /* main.m in Sources */,
+				202DE9DD1C6BA7BD00E4D153 /* DisplayGeoTIFF.m in Sources */,
+				202DE9D41C6BA70000E4D153 /* DisplayOnlineMap.m in Sources */,
 				20F6286E1AB0C6CC006B5799 /* AppDelegate.m in Sources */,
+				202DE9EB1C6BA92300E4D153 /* serial.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
