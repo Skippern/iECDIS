@@ -11,6 +11,9 @@
 @interface AppDelegate ()
 
 - (IBAction)saveAction:(id)sender;
+- (IBAction)newRoute:(id)sender;
+- (IBAction)activateRoute:(id)sender;
+- (IBAction)reverseRoute:(id)sender;
 
 @end
 
@@ -137,6 +140,15 @@
     if ([[self managedObjectContext] hasChanges] && ![[self managedObjectContext] save:&error]) {
         [[NSApplication sharedApplication] presentError:error];
     }
+}
+- (IBAction)newRoute:(id)sender {
+    NSLog(@"New route selected, open route creation dialog");
+}
+- (IBAction)activateRoute:(id)sender {
+    NSLog(@"Activating route");
+}
+- (IBAction)reverseRoute:(id)sender {
+    NSLog(@"Reversing Route");
 }
 
 - (NSUndoManager *)windowWillReturnUndoManager:(NSWindow *)window {

@@ -73,6 +73,25 @@
                                     </items>
                                 </menu>
                             </menuItem>
+                            <menuItem title="Route" id="Ost-YV-Znq">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Route" id="wJL-Io-NPh">
+                                    <items>
+                                        <menuItem title="Manage Routes" id="jpf-qG-nCv">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem title="New Route" id="9zz-Wz-xfc">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem title="Reverse Route" id="AQS-lO-nLK">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem title="Activate Route" id="7r3-ha-JAW">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
                             <menuItem title="View" id="H8h-7b-M4v">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="View" id="HyV-fh-RgO">
