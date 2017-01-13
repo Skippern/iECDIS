@@ -10,7 +10,7 @@
 
 @implementation ViewController
 
-@synthesize contentViewController = _contentViewController;
+//@synthesize nonatomic,  contentViewController = _contentViewController;
 
 - (NSViewController *)contentViewController {
     NSLog(@"contentViewController called in ViewController.m");
