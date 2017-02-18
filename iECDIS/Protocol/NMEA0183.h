@@ -10,4 +10,6 @@
 
 @interface NMEA0183 : NSObject
 
+- (void)NMEA0183decoder:(NSString *)Telegram;
+
 @end

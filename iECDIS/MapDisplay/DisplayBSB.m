@@ -12,4 +12,9 @@
 
 @implementation DisplayBSB
 
+- (NSString *)getScale
+{
+    return [[NSString alloc] initWithFormat:@"1:%@", _KAPScale.stringValue];
+}
+
 @end

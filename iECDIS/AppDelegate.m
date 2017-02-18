@@ -15,6 +15,7 @@
 - (IBAction)activateRoute:(id)sender;
 - (IBAction)reverseRoute:(id)sender;
 
+//nonatomic,
 @end
 
 @implementation AppDelegate

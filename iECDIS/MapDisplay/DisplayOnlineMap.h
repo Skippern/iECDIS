@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
+#import <MapKit/MKTileOverlay.h>
 
 @interface DisplayOnlineMap : NSObject
+
+@property MKTileOverlay *defaultOnlineMap; // The default online map
 
 @end

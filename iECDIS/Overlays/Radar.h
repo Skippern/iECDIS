@@ -10,4 +10,7 @@
 
 @interface Radar : NSObject
 
+@property CGColorRef *radarColor;
+@property NSNumber *radarOpacity;
+
 @end

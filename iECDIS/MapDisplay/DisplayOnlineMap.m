@@ -12,4 +12,14 @@
 
 @implementation DisplayOnlineMap
 
+- (id) init
+{
+    self = [super init];
+    if (self) {
+        _defaultOnlineMap = [[MKTileOverlay alloc] initWithURLTemplate:@"https://tiles.opennauticalchart.org/{z}/{x}/{y}.png"];
+        // minimumZ, maximumZ
+    }
+    return self;
+}
+
 @end
