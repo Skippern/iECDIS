@@ -17,6 +17,9 @@
 		202DE9E81C6BA90700E4D153 /* USB.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DE9E71C6BA90700E4D153 /* USB.m */; };
 		202DE9EB1C6BA92300E4D153 /* serial.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DE9EA1C6BA92300E4D153 /* serial.m */; };
 		202DE9EE1C6BA94300E4D153 /* net.m in Sources */ = {isa = PBXBuildFile; fileRef = 202DE9ED1C6BA94300E4D153 /* net.m */; };
+		2075B3981F5DEF970070EF22 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2075B3971F5DEF970070EF22 /* NetworkExtension.framework */; };
+		2075B39C1F5DF15A0070EF22 /* WayPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075B39B1F5DF15A0070EF22 /* WayPoint.m */; };
+		2075B3A21F5DF5410070EF22 /* Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 2075B3A11F5DF5410070EF22 /* Position.m */; };
 		20E017D41E2D56E700A9E4FE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E017D31E2D56E700A9E4FE /* MapKit.framework */; };
 		20E8B1EE1E2864EF008B1A56 /* AIS.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E8B1ED1E2864EF008B1A56 /* AIS.m */; };
 		20E8B1F11E286517008B1A56 /* Radar.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E8B1F01E286517008B1A56 /* Radar.m */; };
@@ -62,6 +65,11 @@
 		202DE9EC1C6BA94300E4D153 /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = net.h; path = Interface/net.h; sourceTree = "<group>"; };
 		202DE9ED1C6BA94300E4D153 /* net.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = net.m; path = Interface/net.m; sourceTree = "<group>"; };
 		202DE9EF1C6BAC5200E4D153 /* iECDIS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iECDIS.xcconfig; sourceTree = "<group>"; };
+		2075B3971F5DEF970070EF22 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		2075B39A1F5DF15A0070EF22 /* WayPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WayPoint.h; path = Data/WayPoint.h; sourceTree = "<group>"; };
+		2075B39B1F5DF15A0070EF22 /* WayPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WayPoint.m; path = Data/WayPoint.m; sourceTree = "<group>"; };
+		2075B3A01F5DF5410070EF22 /* Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Position.h; path = Data/Position.h; sourceTree = "<group>"; };
+		2075B3A11F5DF5410070EF22 /* Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Position.m; path = Data/Position.m; sourceTree = "<group>"; };
 		20E017D31E2D56E700A9E4FE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		20E8B1EC1E2864EF008B1A56 /* AIS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIS.h; path = Overlays/AIS.h; sourceTree = "<group>"; };
 		20E8B1ED1E2864EF008B1A56 /* AIS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AIS.m; path = Overlays/AIS.m; sourceTree = "<group>"; };
@@ -94,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2075B3981F5DEF970070EF22 /* NetworkExtension.framework in Frameworks */,
 				20E017D41E2D56E700A9E4FE /* MapKit.framework in Frameworks */,
 				2022CCA81AB3B30300106909 /* CoreFoundation.framework in Frameworks */,
 			);
@@ -150,9 +159,22 @@
 			name = Interface;
 			sourceTree = "<group>";
 		};
+		2075B3991F5DF10D0070EF22 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2075B3A01F5DF5410070EF22 /* Position.h */,
+				2075B3A11F5DF5410070EF22 /* Position.m */,
+				2075B39A1F5DF15A0070EF22 /* WayPoint.h */,
+				2075B39B1F5DF15A0070EF22 /* WayPoint.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		20E017D21E2D56E700A9E4FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2075B3971F5DEF970070EF22 /* NetworkExtension.framework */,
+				2022CCA71AB3B30300106909 /* CoreFoundation.framework */,
 				20E017D31E2D56E700A9E4FE /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -174,7 +196,6 @@
 		20F6285E1AB0C6CC006B5799 = {
 			isa = PBXGroup;
 			children = (
-				2022CCA71AB3B30300106909 /* CoreFoundation.framework */,
 				20F628911AB0CA30006B5799 /* LICENSE */,
 				20F628921AB0CA30006B5799 /* README.md */,
 				20F628691AB0C6CC006B5799 /* iECDIS */,
@@ -196,6 +217,7 @@
 		20F628691AB0C6CC006B5799 /* iECDIS */ = {
 			isa = PBXGroup;
 			children = (
+				2075B3991F5DF10D0070EF22 /* Data */,
 				20F6286C1AB0C6CC006B5799 /* AppDelegate.h */,
 				20F6286D1AB0C6CC006B5799 /* AppDelegate.m */,
 				20F628901AB0C83F006B5799 /* iECDIS.entitlements */,
@@ -289,6 +311,7 @@
 				TargetAttributes = {
 					20F628661AB0C6CC006B5799 = {
 						CreatedOnToolsVersion = 6.1.1;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 1;
@@ -359,9 +382,11 @@
 				202DE9E11C6BA84400E4D153 /* NMEA0183.m in Sources */,
 				202DE9DA1C6BA78E00E4D153 /* DisplayENC.m in Sources */,
 				20E8B1F41E28652D008B1A56 /* grib.m in Sources */,
+				2075B39C1F5DF15A0070EF22 /* WayPoint.m in Sources */,
 				202DE9EE1C6BA94300E4D153 /* net.m in Sources */,
 				20F628761AB0C6CC006B5799 /* iECDIS.xcdatamodeld in Sources */,
 				202DE9E41C6BA87000E4D153 /* NMEA2000.m in Sources */,
+				2075B3A21F5DF5410070EF22 /* Position.m in Sources */,
 				20F628731AB0C6CC006B5799 /* ViewController.m in Sources */,
 				20E8B1F71E28662F008B1A56 /* RTFM.m in Sources */,
 				20F628701AB0C6CC006B5799 /* main.m in Sources */,
@@ -491,6 +516,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iECDIS/iECDIS.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				INFOPLIST_FILE = iECDIS/Info.plist;
@@ -505,6 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iECDIS/iECDIS.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				INFOPLIST_FILE = iECDIS/Info.plist;
@@ -562,7 +589,7 @@
 				20F628891AB0C6CC006B5799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		20F6288A1AB0C6CC006B5799 /* Build configuration list for PBXNativeTarget "iECDIS" */ = {
 			isa = XCConfigurationList;
@@ -571,7 +598,7 @@
 				20F6288C1AB0C6CC006B5799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		20F6288D1AB0C6CC006B5799 /* Build configuration list for PBXNativeTarget "iECDISTests" */ = {
 			isa = XCConfigurationList;
@@ -580,7 +607,7 @@
 				20F6288F1AB0C6CC006B5799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 

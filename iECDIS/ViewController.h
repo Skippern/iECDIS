@@ -10,7 +10,7 @@
 
 @interface ViewController : NSViewController
 
-@property (strong) NSViewController *contentViewController;
+@property (nonatomic, strong) NSViewController *contentViewController;
 
 @end
 

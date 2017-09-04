@@ -10,14 +10,14 @@
 
 @implementation ViewController
 
-//@synthesize nonatomic,  contentViewController = _contentViewController;
-
+//@synthesinonatomic, ze nonatomic contentViewController = _contentViewController;
+@synthesize contentViewController;
 - (NSViewController *)contentViewController {
     NSLog(@"contentViewController called in ViewController.m");
-    if (_contentViewController) {
-        return _contentViewController;
+    if (contentViewController) {
+        return contentViewController;
     }
-    return _contentViewController;
+    return contentViewController;
 }
 
 - (void)viewDidLoad {
